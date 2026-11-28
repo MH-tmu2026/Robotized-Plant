@@ -6,14 +6,12 @@ Robotized Plantの実行には、以下のデバイスを使用します。
 
 - Raspberry Pi4（Raspberry pi OS Legacy, 64-bit）
 - Grove Base Hat for Raspberry pi
-- Depth AI カメラ（luxonis 社製）
+- Depth AI カメラ（luxonis社製）
 - TTP223（静電容量式タッチセンサ）
-- Gravity:Analog Waterproof Capacitive Soil Moisture
-Sensor (土壌水分量センサ)
+- Gravity:Analog Waterproof Capacitive Soil Moisture Sensor (土壌水分量センサ)
 - Grove Water Sensor（水滴センサ）
 - Grove Light Sensor v1.2（光センサ）
-- WS2813RGBLEDStripWaterproof-30LED/m-1m（紐
-状LED）
+- WS2813RGBLEDStripWaterproof-30LED/m-1m（紐状LED）
 - スピーカー
 
 
@@ -46,6 +44,7 @@ pipに関連するエラーで弾かれる場合、3におけるrtshellのイン
 以下の手順で実行してください。
 
 1. ターミナルを立ち上げ、それぞれのソースコードを実行する。
+Control\_LED.pyはsudo権限をつけないと起動しない可能性があるため、sudo権限を付けて実行する。
 2. コンポーネント操作用のターミナルを追加で立ち上げ、以下のようにポートの接続を行う。
 ```
 rtcon /localhost/RasPi.host_cxt/Light_Sensor0.rtc:light /localhost/RasPi.host_cxt/Memory_State0.rtc:light
